@@ -3,13 +3,13 @@ class CssGenerator
 
   def initialize
     @browsers = ["", "-webkit-", "-moz-", "-o-", "-ms-"]    
-    @outfile = File.open('carousel.min.css', 'w')
+    @outfile = File.open('carousel.css', 'w')
 
     @positions = Array.new
 
     # (positionnumber, top, left, right, width, height, margintop, marginleft, marginright, opacity, zindex, transformscale)
 
-    @positions[0] = Position.new(0, "50%", "50%", "auto", "400px", "400px", "-200px", "", "", 1, 0, 1.4) #center -200px marginleft
+    @positions[0] = Position.new(0, "50%", "50%", "auto", "400px", "400px", "-200px", "", "", 1, 1, 1.4) #center -200px marginleft
     @positions[1] = Position.new(1, "50%", "105%", "auto", "400px", "400px", "-200px", "", "", 1, 0, 1) #right
     @positions[2] = Position.new(2, "50%", "160%", "auto", "400px", "400px", "-200px", "", "", 1, 0, 1) #far right
     @positions[3] = Position.new(3, "50%", "160%", "auto", "400px", "400px", "-200px", "", "", 0, -1, 1) #far right invisible
