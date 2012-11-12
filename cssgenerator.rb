@@ -9,13 +9,13 @@ class CssGenerator
 
     # (positionnumber, top, left, right, width, height, margintop, marginleft, marginright, opacity, zindex, transformscale)
 
-    @positions[0] = Position.new(0, "50%", "50%", "auto", "400px", "400px", "-200px", "", "", 1, 1, 1.4) #center -200px marginleft
+    @positions[0] = Position.new(0, "50%", "50%", "auto", "400px", "400px", "-200px", "", "", 1, 5, 1.4) #center -200px marginleft
     @positions[1] = Position.new(1, "50%", "105%", "auto", "400px", "400px", "-200px", "", "", 1, 0, 1) #right
     @positions[2] = Position.new(2, "50%", "160%", "auto", "400px", "400px", "-200px", "", "", 1, 0, 1) #far right
     @positions[3] = Position.new(3, "50%", "160%", "auto", "400px", "400px", "-200px", "", "", 0, -1, 1) #far right invisible
     @positions[4] = Position.new(4, "50%", "-40%", "160%", "400px", "400px", "-200px", "", "", 0, -1, 1) #far left invisible
     @positions[5] = Position.new(5, "50%", "-40%", "160%", "400px", "400px", "-200px", "", "", 1, 0, 1) #far left
-    @positions[6] = Position.new(6, "50%", "-5%", "80%", "400px", "400px", "-200px", "", "", 1, 0, 1) #left
+    @positions[6] = Position.new(6, "50%", "-5%", "80%", "400px", "400px", "-200px", "", "", 1, 1, 1) #left
 
     @animationinputs = Array.new
 
